@@ -1,0 +1,25 @@
+{
+  "name": "Jira UI Tweaks",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Jira UI Tweaks",
+  "homepage_url": "http://github.com/mfyz",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.atlassian.net/*"
+      ],
+      "css": [
+        "inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://*.atlassian.net/*"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ]
+}
